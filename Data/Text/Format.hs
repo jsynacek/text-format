@@ -36,7 +36,6 @@ module Data.Text.Format
     ) where
 
 import Control.Monad.IO.Class (MonadIO(liftIO))
-import Data.Text.Format.Functions ((<>))
 import Data.Text.Format.Params (Params(..))
 import Data.Text.Format.Types.Internal (Format(..), Only(..), Shown(..))
 import Data.Text.Format.Types.Internal (Hex(..))

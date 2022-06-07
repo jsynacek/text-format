@@ -20,11 +20,9 @@ module Data.Text.Buildable
 import Data.Void (Void, absurd)
 #endif
 
-import Data.Monoid (mempty)
 import Data.Int (Int8, Int16, Int32, Int64)
 import Data.Fixed (Fixed, HasResolution, showFixed)
 import Data.Ratio (Ratio, denominator, numerator)
-import Data.Text.Format.Functions ((<>))
 import Data.Text.Format.Int (decimal, hexadecimal)
 import Data.Text.Format.Types (Hex(..), Shown(..))
 import Data.Text.Lazy.Builder
@@ -32,7 +30,7 @@ import Data.Time.Calendar (Day, showGregorian)
 import Data.Time.Clock (DiffTime, NominalDiffTime, UTCTime, UniversalTime)
 import Data.Time.Clock (getModJulianDate)
 import Data.Time.LocalTime (LocalTime, TimeOfDay, TimeZone, ZonedTime)
-import Data.Word (Word, Word8, Word16, Word32, Word64)
+import Data.Word (Word8, Word16, Word32, Word64)
 import Foreign.Ptr (IntPtr, WordPtr, Ptr, ptrToWordPtr)
 import qualified Data.Double.Conversion.Text as C
 import qualified Data.Text as ST
